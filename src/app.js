@@ -16,6 +16,11 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
 app.use(cookieParser());
 
+// Health check
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "OK", timestamp: new Date().toISOString() });
+});
+
 // Routes import
 
 import adminrouter from "../src/Modules/Admin/Admin.routes.js";

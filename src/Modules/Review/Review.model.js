@@ -1,3 +1,5 @@
+import mongoose from "mongoose";
+
 const reviewSchema = new mongoose.Schema(
   {
     customerName: { type: String, required: true },

@@ -3,7 +3,7 @@ import {
   addTransaction,
   deleteTransaction,
   getTransactions
-} from './transaction.controller.js';
+} from './Transaction.controler.js';
 
 const router = Router();
 
