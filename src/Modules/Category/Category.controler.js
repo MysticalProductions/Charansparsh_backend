@@ -43,7 +43,7 @@ const createCategory = async (req, res) => {
       categoriesTitle,
       description,
       image: imageUrl,
-      status,
+      status: status || "active",
       isHeaderCategory: !!isHeaderCategory,
       isCollectionCategory: !!isCollectionCategory,
     });
